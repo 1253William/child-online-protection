@@ -12587,7 +12587,7 @@ p.checkout-coupon input[type=text]:focus {
 
 /*Custom CSS*/
 .statistics-section {
-  /* background-color: #42AA4B; */
+  background-color: #42AA4B;
   background-image: url(/source-main/assets/images/bg-center.png);
   background-repeat: no-repeat;
   background-position:cover;
