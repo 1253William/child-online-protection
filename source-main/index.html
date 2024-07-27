@@ -127,6 +127,7 @@
                                     <ul class="submenu">
                                        <li><a href="careers.html"><i class="fa-light fa-bolt"></i>  Careers</a></li>
                                         <li><a href="events.html"><i class="fa-light fa-bolt"></i>  Events</a></li>
+                                        <li id="contact"><a href="help.html"><i class="fa-light fa-bolt"></i> Contact</a></li>
                                         <li><a href="help.html"><i class="fa-light fa-bolt"></i>  Help</a></li>
                                     </ul>
                                  </li>
@@ -254,7 +255,7 @@
    <!-- About area end -->
 
    <!--Stats-->
-   <section class="statistics-section text-white text-center py-10">
+   <!-- <section class="statistics-section text-white text-center py-10">
       <div class="container">
           <div class="row">
               <div class="col-12 col-md-4 mb-4">
@@ -268,11 +269,37 @@
               <div class="col-12 col-md-4 mb-4">
                   <h2 class="counter" data-target="320">0</h2>
                   <p>Hours</p>
-                  <!--Regional Awareness-->
+                  Regional Awareness
               </div>
           </div>
       </div>
-  </section>
+  </section> -->
+
+  <section class="stats-section">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-4 col-sm-12">
+               <div class="stat-card">
+                   <div class="stat-number" id="volunteers" data-target="40">0</div>
+                   <div class="stat-text"><p>Volunteers</p></div>
+               </div>
+           </div>
+           <div class="col-md-4 col-sm-12">
+               <div class="stat-card">
+                   <div class="stat-number" id="students" data-target="5952">0</div>
+                   <div class="stat-text"><p>Students Reached</p></div>
+               </div>
+           </div>
+           <div class="col-md-4 col-sm-12">
+               <div class="stat-card">
+                   <div class="stat-number" id="awareness" data-target="320">0</div>
+                   <div class="stat-text"><p>Hours</p></div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
 
    <section class="programmes-section text-dark text-center py-5" id="what-we-do">
       <div class="container">
@@ -321,14 +348,14 @@
             <div class="col-12 col-md-6 mb-4">
                <div class="programme-item">
                   <div class="programme-icon bg-sea text-white mx-auto mb-3">5</div>
-                  <h3>Disinformation & Misinformation Campaign</h3>
+                  <h3>Social Media & Mental Health Campaign</h3>
                   <p>Our campaign addresses the impact of social media on mental health. We provide guidance on managing screen time, recognizing harmful behaviors, and promoting positive online interactions to support mental well-being.</p>
                </div>
             </div>
             <div class="col-12 col-md-6 mb-4">
                <div class="programme-item">
                   <div class="programme-icon bg-danger text-white mx-auto mb-3">6</div>
-                  <h3>Digital Skills Training</h3>
+                  <h3>Young Digital Leader Fellowship</h3>
                   <p>The Young Digital Leader Fellowship empowers young innovators to lead digital safety initiatives in their communities. Fellows receive mentorship, resources, and a platform to advocate for a safer digital environment.</p>
                </div>
             </div>
@@ -698,7 +725,30 @@
 
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <script src="scripts.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   <script>
+       $(document).ready(function() {
+           $('.stat-number').each(function() {
+               var $this = $(this);
+               $this.prop('Counter',0).animate({
+                   Counter: $this.data('target')
+               }, {
+                   duration: 2000,
+                   easing: 'swing',
+                   step: function (now) {
+                       if ($this.data('target') === 10) {
+                           $this.text(Math.ceil(now));
+                       } else {
+                           $this.text(Math.ceil(now) + '+');
+                       }
+                   }
+               });
+           });
+       });
+   </script>
 </body>
 
 </html>

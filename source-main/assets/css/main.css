@@ -12585,6 +12585,9 @@ p.checkout-coupon input[type=text]:focus {
   }
 }
 
+#contact {
+  display: none;
+}
 /*Custom CSS*/
 .statistics-section {
   background-color: #42AA4B;
@@ -13342,5 +13345,30 @@ label {
     text-transform: uppercase;
     color: white;
   }
+
+  #contact {
+    display: block;
+  }
   
   }
+
+  .stats-section {
+    background-color: #42AA4B;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.stat-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.stat-number {
+    font-size: 48px;
+    font-weight: bold;
+}
+.stat-text p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--clr-common-white);
+}
