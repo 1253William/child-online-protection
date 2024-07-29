@@ -112,7 +112,7 @@
                                     <a href="index.html">Home</a>
                                  </li>
                                  <li>
-                                    <a href="about.html">About</a>
+                                    <a href="about-us.html">About</a>
                                  </li>
                                  <li>
                                     <a href="partner.html">Work With Us</a>
@@ -240,9 +240,9 @@
                         <span><i class="fa-thin fa-phone"></i></span>
                      </div>
                      <div class="contact-info-content">
-                        <h4>Contact Phone Number</h4>
+                        <h4>Phone Number</h4>
                         <p><a href="tel:0560646460">(+233) 0560646460</a></p>
-                        <p><a href="tel:0560646460">(+233) 0560646460</a></p>
+                        <br>
                      </div>
                   </div>
                </div>
@@ -251,38 +251,38 @@
                <div class="row gy-50">
                   <div class="col-xxl-12 col-xl-12">
                      <div class="contact-from">
-                        <form action="#">
+                        <form action="https://usebasin.com/f/644381d27e6a" method="POST">
                            <div class="row">
                               <div class="col-lg-6">
                                  <div class="contact__from-input">
-                                    <input type="text" placeholder="Enter Your Full Name *" required>
+                                    <input type="text" name="fullName"  placeholder="Enter Your Full Name *" required>
                                  </div>
                               </div>
                               <div class="col-lg-6">
                                  <div class="contact__from-input">
-                                    <input type="text" placeholder="Enter Your Email *" required>
+                                    <input type="text" name="email"  placeholder="Enter Your Email *" required>
                                  </div>
                               </div>
                               <div class="col-lg-6">
                                  <div class="contact__from-input">
-                                    <input type="tel" placeholder="Enter Phone Number" required>
+                                    <input type="tel" name="region_province"  placeholder="Enter Phone Number" required>
                                  </div>
                               </div>
                               <div class="col-lg-6">
                                  <div class="contact__select mb-20">
-                                    <select>
-                                       <option value="2">Donate to Our Cause</option>
-                                       <option value="2">Volunteer</option>
-                                       <option value="3">Join Our Team</option>
-                                       <option value="4">Become an Advocate</option>
-                                       <option value="5">Request Training/Workshops</option>
-                                       <option value="6">Request A Resource</option>
+                                    <select name="Method_of_participation">
+                                       <option value="1-Donate to Our Cause">Donate to Our Cause</option>
+                                       <option value="2-Volunteer">Volunteer</option>
+                                       <option value="3-Join Our Team">Join Our Team</option>
+                                       <option value="4-Become an Advocate">Become an Advocate</option>
+                                       <option value="5-Request Training/Workshops">Request Training/Workshops</option>
+                                       <option value="6-Request A Resource">Request A Resource</option>
                                     </select>
                                  </div>
                               </div>
                               <div class="col-lg-12">
                                  <div class="contact__from-input">
-                                    <textarea name="Message" placeholder="Write Your Message"></textarea>
+                                    <textarea name="Message" value="Message" placeholder="Write Your Message"></textarea>
                                  </div>
                               </div>
                               <div class="col-12">
@@ -324,21 +324,22 @@
                   </div>
                   <div class="col-xxl-6 col-xl-6 col-lg-6">
                      <div class="newsletter-form">
-                        <form action="#">
-                           <div class="newsletter-input p-relative">
-                              <input type="text" placeholder="Enter Your Email">
-                              <button class="fill-btn" type="submit">
-                                 <span class="fill-btn-inner">
-                                    <span class="fill-btn-normal">Subscribe</span>
-                                    <span class="fill-btn-hover">Subscribe</span>
-                                 </span>
-                                 <span class="fill-btn-inner">
-                                    <span class="fill-btn-normal"><i class="fa-light fa-bell-on"></i></span>
-                                    <span class="fill-btn-hover"><i class="fa-light fa-bell-on"></i></span>
-                                 </span>
-                              </button>
-                           </div>
+                        <form action="https://usebasin.com/f/644381d27e6a" method="POST">
+                            <div class="newsletter-input p-relative">
+                                <input type="email" name="subscribed_user_newsletter" placeholder="Enter Your Email" autocomplete required>
+                                <button class="fill-btn" type="submit">
+                                    <span class="fill-btn-inner">
+                                        <span class="fill-btn-normal">Subscribe</span>
+                                        <span class="fill-btn-hover">Subscribe</span>
+                                    </span>
+                                    <span class="fill-btn-inner">
+                                        <span class="fill-btn-normal"><i class="fa-light fa-bell-on"></i></span>
+                                        <span class="fill-btn-hover"><i class="fa-light fa-bell-on"></i></span>
+                                    </span>
+                                </button>
+                            </div>
                         </form>
+                    </div>                    
                      </div>
                   </div>
                </div>
@@ -384,7 +385,7 @@
                      <div class="footer-link">
                         <ul>
                            <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="about-us.html">About Us</a></li>
                            <li><a href="partner.html">Work With Us</a></li>
                            <li><a href="careers.html">Careers</a></li>
                            <li><a href="contact.html#donate">Donate</a></li>

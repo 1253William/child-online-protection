@@ -3924,7 +3924,7 @@ PAGINATION CSS START
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .banner-content-2 h2 {
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600;
   }
 
@@ -13371,4 +13371,8 @@ label {
     font-size: 18px;
     font-weight: 700;
     color: var(--clr-common-white);
+}
+
+#William-card {
+  margin-top: 2.5rem;
 }
