@@ -21,6 +21,17 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/main.css">
    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+      <!--Analytics-->
+      <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z1QWGFYHH"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-1Z1QWGFYHH');
+   </script>
 </head>
 
 <body>
@@ -255,26 +266,6 @@
    <!-- About area end -->
 
    <!--Stats-->
-   <!-- <section class="statistics-section text-white text-center py-10">
-      <div class="container">
-          <div class="row">
-              <div class="col-12 col-md-4 mb-4">
-                  <h2 class="counter" data-target="40">0+</h2>
-                  <p>Volunteers</p>
-              </div>
-              <div class="col-12 col-md-4 mb-4">
-                  <h2 class="counter" data-target="5952">0+</h2>
-                  <p>Students Reached</p>
-              </div>
-              <div class="col-12 col-md-4 mb-4">
-                  <h2 class="counter" data-target="320">0</h2>
-                  <p>Hours</p>
-                  Regional Awareness
-              </div>
-          </div>
-      </div>
-  </section> -->
-
   <section class="stats-section">
    <div class="container">
        <div class="row">
@@ -736,7 +727,7 @@
                $this.prop('Counter',0).animate({
                    Counter: $this.data('target')
                }, {
-                   duration: 2000,
+                   duration: 6000,
                    easing: 'swing',
                    step: function (now) {
                        if ($this.data('target') === 10) {
