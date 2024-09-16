@@ -32,6 +32,70 @@
 
    gtag('config', 'G-1Z1QWGFYHH');
    </script>
+  <style>
+   .modal-header {
+       background-color: #42AA4B;
+       color: white;
+   }
+   .modal-footer {
+       background-color: #f1f1f1;
+   }
+   .modal-body {
+            font-size: 16px;
+        }
+        .modal-body h4 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .modal-body .subtext {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #023755;
+        }
+
+        .modal-body #title {
+         font-size: 24px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .modal-body p {
+         font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .modal-body ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .modal-body a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .modal-body a:hover {
+            text-decoration: underline;
+        }
+   .btn-primary {
+       background-color: #42AA4B;
+       border-color: #42AA4B;
+   }
+   .btn-primary:hover {
+       background-color: #37993b;
+       border-color: #37993b;
+   }
+   .bg-green {
+       background-color: #42AA4B;
+   }
+   .programme-item {
+       text-align: center;
+       padding: 20px;
+       border: 1px solid #ddd;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       cursor: pointer;
+   }
+</style>
 </head>
 
 <body>
@@ -318,14 +382,14 @@
               </div>
           </div>
 
-          <div class="row">
-               <div class="col-12 col-md-6 mb-4">
-                  <div class="programme-item">
-                     <div class="programme-icon bg-green text-white mx-auto mb-3">3</div>
-                     <h3>Disinformation & Misinformation Campaign</h3>
-                     <p>We educate young minds on identifying and combating disinformation and misinformation online. Our campaign provides tools and resources to help children discern credible sources and think critically about the content they encounter.</p>
-                  </div>
-               </div>
+          <div class="row">               
+                   <div class="col-12 col-md-6 mb-4">
+                       <div class="programme-item" data-toggle="modal" data-target="#campaignModal">
+                           <div class="programme-icon bg-green text-white mx-auto mb-3">3</div>
+                           <h3>Disinformation & Misinformation Campaign</h3>
+                           <p>We educate young minds on identifying and combating disinformation and misinformation online. Our campaign provides tools and resources to help children discern credible sources and think critically about the content they encounter.</p>
+                       </div>
+                   </div>   
                <div class="col-12 col-md-6 mb-4">
                   <div class="programme-item">
                      <div class="programme-icon bg-orange text-white mx-auto mb-3">4</div>
@@ -363,6 +427,64 @@
          </div>
       </div>
   </section>
+
+<!-- Modal -->
+<div class="modal fade" id="campaignModal" tabindex="-1" role="dialog" aria-labelledby="campaignModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="campaignModalLabel">Disinformation & Misinformation Campaign</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="modal-body">
+               <h6 id="title">Campaign Name: Truth Over Sharing</h6>
+               <h6 class="subtext">Introduction</h6>
+               <p>Child Online Protection presents "Click. Check. Vote Ghana! Fight Fake News & Online Hate." As Ghana heads to the polls, the spread of disinformation and online hate threatens our democracy. Our campaign, "Truth Over Sharing," aims to empower citizens to critically evaluate online information, reduce fake news, and combat cyberbullying. August - November, 2024</p>
+
+               <h6 class="subtext">The Problem</h6>
+               <ul>
+                   <li>Fake News</li>
+                   <li>Online Hate</li>
+               </ul>
+
+               <h6 class="subtext">The Solution</h6>
+               <ul>
+                   <li>Education and Awareness: Workshops, webinars, and educational materials.</li>
+                   <li>Partnerships: Collaborations with media organizations and tech companies.</li>
+                   <li>Community Engagement: Involvement of local councils and youth.</li>
+                   <li>Empowerment: Fact-checking tools and promoting positive online behavior.</li>
+               </ul>
+
+               <h6 class="subtext">Call to Action</h6>
+               <ul>
+                   <a href="https://forms.gle/uRUuWWWkAXXbkBULA" class="btn btn-primary">Sign Up Now</a>
+                   <li>Share Responsibly</li>
+                   <li>Report Hate Speech</li>
+                   <li>Be an Advocate</li>
+               </ul>
+
+               <h6 class="subtext">Support Us</h6>
+               <ul>
+                   <li>Financial Contributions: Sponsorships, grants, and donations.</li>
+                   <li>In-Kind Contributions: Expertise, content, technology.</li>
+                   <li>Promotion: Media coverage and social media engagement.</li>
+               </ul>
+
+               <h6 class="subtext">Contact Us</h6>
+               <ul>
+                   <li>Email: <a href="mailto:childonlinep@gmail.com" style="color: black;">childonlinep@gmail.com</a></li>
+                   <li>Phone: 0242211307</li>
+                   <li>Lead: Confidence Mawusi</li>
+               </ul>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+           </div>
+       </div>
+   </div>
+</div>
 
 
   <!--The Issue-->
@@ -720,6 +842,7 @@
    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   
    <script>
        $(document).ready(function() {
            $('.stat-number').each(function() {

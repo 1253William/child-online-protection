@@ -31,6 +31,49 @@
    
       gtag('config', 'G-1Z1QWGFYHH');
       </script>
+
+<style>
+   .book-us-section {
+       background-color: #f8f9fa;
+       padding: 50px 0;
+       text-align: center;
+   }
+   .book-us-header {
+       margin-bottom: 30px;
+   }
+   .event-type-card {
+       background: white;
+       border: 1px solid #ddd;
+       border-radius: 10px;
+       padding: 20px;
+       margin-bottom: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   .event-type-card h4 {
+       margin-bottom: 15px;
+       color: #333;
+   }
+   .booking-form {
+       background: white;
+       padding: 20px;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   .form-group label {
+       font-weight: bold;
+   }
+   .form-group textarea {
+       height: 150px;
+   }
+   .btn-primary {
+       background-color: #42AA4B;
+       border-color: #42AA4B;
+   }
+   .btn-primary:hover {
+       background-color: #37993b;
+       border-color: #37993b;
+   }
+</style>
 </head>
 
 <body>
@@ -350,6 +393,77 @@
            </div>
         </div>
      </div>
+   </div>
+</section>
+
+<!--Book Us-->
+<section class="book-us-section">
+   <div class="container">
+       <div class="book-us-header">
+           <h1>Book Us</h1>
+           <p>Bring Child Online Safety to Your Event!</p>
+       </div>
+       <div class="row">
+           <div class="col-md-4">
+               <div class="event-type-card">
+                   <h4>Workshops</h4>
+                   <p>Engage in practical, hands-on workshops designed to equip participants with essential online safety skills and strategies.</p>
+               </div>
+           </div>
+           <div class="col-md-4">
+               <div class="event-type-card">
+                   <h4>Seminars and Talks</h4>
+                   <p>Book our expert-led seminars and talks, offering insightful discussions on key topics like cyberbullying, digital literacy, and internet safety.</p>
+               </div>
+           </div>
+           <div class="col-md-4">
+               <div class="event-type-card">
+                   <h4>Interactive Sessions</h4>
+                   <p>Participate in dynamic, interactive sessions that foster collaboration and provide engaging activities for both children and parents on online safety.</p>
+               </div>
+           </div>
+       </div>
+       <div class="booking-form mt-5">
+           <h3>Request a Session</h3>
+           <form method="POST" action="https://usebasin.com/f/644381d27e6a">
+               <div class="form-group">
+                   <label for="name">Full Name</label>
+                   <input type="text" class="form-control" name="FullName" id="name" placeholder="Enter your Full Name" required>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email address</label>
+                   <input type="email" class="form-control" name="userEmail" id="email" placeholder="Enter your email" required>
+               </div>
+               <div class="form-group">
+                   <label for="phone">Phone Number</label>
+                   <input type="tel" class="form-control" name="userPhoneNumber" id="phone" placeholder="Enter your phone number" required>
+               </div>
+               <div class="form-group">
+                   <label for="event-type">Event Type</label>
+                   <select class="form-control" name="eventType" id="event-type" required>
+                       <option value="">Select Event Type</option>
+                       <option value="workshop">Workshop</option>
+                       <option value="seminar">Seminar</option>
+                       <option value="interactive">Interactive Session</option>
+                   </select>
+               </div>
+               <div class="form-group">
+                   <label for="target-audience">Target Audience</label>
+                   <select class="form-control" name="targetAudience" id="target-audience" required>
+                       <option value="">Select Target Audience</option>
+                       <option value="schools">Schools and Educational Institutions</option>
+                       <option value="community">Community Events</option>
+                       <option value="corporate">Corporate Events</option>
+                       <option value="conferences">Conferences and Summits</option>
+                   </select>
+               </div>
+               <div class="form-group">
+                   <label for="message">Additional Information</label>
+                   <textarea class="form-control" id="message"name="userMessage" placeholder="Provide any additional details or requirements" required></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Submit Request</button>
+           </form>
+       </div>
    </div>
 </section>
 
