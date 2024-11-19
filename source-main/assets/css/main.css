@@ -13377,3 +13377,22 @@ label {
   margin-top: 2.5rem;
 }
 
+/*New Form on HomePage-Call for Volunteers*/
+.roles-list .role-card:hover {
+  background-color: #019CF4;
+  color: #fff;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background-color: #019CF4;
+  border-color: #019CF4;
+}
+.btn-primary:hover {
+  background-color: #007acc;
+  border-color: #007acc;
+}
+
+.ref-instagram:hover {
+  color:#3e976c;
+}
