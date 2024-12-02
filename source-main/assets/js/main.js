@@ -897,6 +897,10 @@
 
 
 //Custom JS
+    setInterval(() => {
+            const campaignModal = new bootstrap.Modal(document.getElementById('campaignTipsModal'));
+            campaignModal.show();
+        }, 11000);
 
 
 

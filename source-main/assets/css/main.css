@@ -13396,3 +13396,58 @@ label {
 .ref-instagram:hover {
   color:#3e976c;
 }
+
+/*Image modal*/
+       .modal-content {
+            border-radius: 10px;
+        }
+        .modal-header {
+            border-bottom: none;
+        }
+        .modal-footer {
+            border-top: none;
+        }
+        .modal-body img {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .close-btn {
+            background: #ff5757;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+          .campaign-safety-section {
+            background-color: #f8f9fa;
+            padding: 50px 15px;
+        }
+        .campaign-safety-section .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .campaign-safety-section img {
+            width: 70%;
+            border-radius: 10px;
+        }
+        .campaign-safety-section h2 {
+            color: #019CF4;
+        }
+        .campaign-safety-section p {
+            color: #333;
+        }
+        .campaign-safety-section .btn-primary {
+            background-color: #42AA4B;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .campaign-safety-section .content-wrapper {
+                flex-direction: column;
+            }
+        }
