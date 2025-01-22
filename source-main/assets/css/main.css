@@ -13451,3 +13451,14 @@ label {
                 flex-direction: column;
             }
         }
+    
+.bullet {
+    text-align: center;
+}
+
+.bullet-items {
+    list-style-position: inside; /* Ensures numbering stays aligned */
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
